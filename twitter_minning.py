@@ -3,12 +3,16 @@
 from TwitterAPI import TwitterAPI
 import time
 
-CONSUMER_KEY =''
-CONSUMER_SECRET=''
-ACCESS_TOKEN_KEY=''
-ACCESS_TOKEN_SECRET=''
+'''
+Keys so you can '"download" tweets. You must create a twitter account and go to 
+https://developer.twitter.com/en/apply-for-access so you can get access to your keys.
+'''
+CONSUMER_KEY ='Your CONSUMER_KEY'
+CONSUMER_SECRET='Your CONSUMER_SECRET'
+ACCESS_TOKEN_KEY='Your ACCESS_TOKEN_KEY'
+ACCESS_TOKEN_SECRET='Your ACCESS_TOKEN_SECRET'
 
-TRACK_TERM = '#OTDirecto21D'  #trending
+TRACK_TERM = '#McDonalds' #some topic of your interest
 
 api = TwitterAPI(CONSUMER_KEY, 
                  CONSUMER_SECRET,
@@ -50,4 +54,3 @@ for item in r:
 
     if time.time < future:
         break
-
